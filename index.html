@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aïda Dieng — Développeuse Web | Portfolio Professionnel</title>
+
+    <meta name="description"
+        content="Portfolio d'Aïda Dieng, Développeuse Web passionnée par la création d'interfaces modernes, intuitives et performantes. Étudiante en Licence 3 IDA à l'UNCHK.">
+    <meta name="keywords"
+        content="Aïda Dieng, Développeuse Web, Portfolio, Saint-Louis, Sénégal, UNCHK, HTML, CSS, JavaScript, WordPress, Bootstrap">
+    <meta name="author" content="Aïda Dieng">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Aïda Dieng — Développeuse Web | Portfolio">
+    <meta property="og:description" content="Découvrez le portfolio professionnel d'Aïda Dieng, développeuse web spécialisée en intégration front-end et création d'interfaces modernes.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER & NAVIGATION
+    ========================== -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <a href="#accueil" class="logo" aria-label="Accueil Aïda Dieng">
+                <span class="logo-bracket">&lt;</span><span class="logo-name">AIDA'S</span> <span class="logo-slash">/&gt;</span>
+            </a>
+
+            <div class="nav-wrapper" id="nav-wrapper">
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#accueil" class="nav-link active" data-i18n="nav.home">Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link" data-i18n="nav.about">À propos</a></li>
+                    <li><a href="#competences" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                    <li><a href="#projets" class="nav-link" data-i18n="nav.projects">Projets</a></li>
+                    <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-action">
+                    <button class="lang-switcher" id="lang-switcher" aria-label="Changer de langue / Switch language" title="Changer de langue">
+                        <i class="bi bi-translate"></i>
+                        <span class="lang-current" id="current-lang-code">EN</span>
+                    </button>
+                </div>
+            </div>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main>
+
+        <!-- =========================
+             SECTION ACCUEIL / HERO
+        ========================== -->
+        <section id="accueil" class="hero">
+            <div class="hero-bg-shapes">
+                <div class="bg-shape shape-1"></div>
+                <div class="bg-shape shape-2"></div>
+            </div>
+
+            <div class="hero-container">
+                <!-- CONTENU TEXTE -->
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span data-i18n="hero.badge">PORTFOLIO PROFESSIONNEL</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span data-i18n="hero.iam">JE SUIS</span> <br>
+                        <span class="highlight-bordeaux">AÏDA DIENG</span>
+                    </h1>
+
+                    <h2 class="hero-role" data-i18n="hero.role">
+                        DÉVELOPPEUSE WEB
+                    </h2>
+
+                    <p class="hero-summary" data-i18n="hero.summary">
+                        Passionnée par la conception d'interfaces web modernes, élégantes et centrées sur l'utilisateur.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projets" class="btn btn-primary">
+                            <span data-i18n="hero.btnProjects">Voir mes projets</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="bi bi-envelope"></i>
+                            <span data-i18n="hero.btnContact">Me contacter</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-quick-stats">
+                        <div class="quick-stat">
+                            <span class="stat-value" data-i18n="hero.stat1Val">L3</span>
+                            <span class="stat-text" data-i18n="hero.stat1Text">Informatique & Dév</span>
+                        </div>
+                        <div class="stat-sep"></div>
+                        <div class="quick-stat">
+                            <span class="stat-value" data-i18n="hero.stat2Val">3+</span>
+                            <span class="stat-text" data-i18n="hero.stat2Text">Projets Réalisés</span>
+                        </div>
+                        <div class="stat-sep"></div>
+                        <div class="quick-stat">
+                            <span class="stat-value" data-i18n="hero.stat3Val">UNCHK</span>
+                            <span class="stat-text" data-i18n="hero.stat3Text">Saint-Louis, Sénégal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHOTO AVEC CADRE ORGANIC BLOB SHAPE -->
+                <div class="hero-visual">
+                    <div class="blob-frame-wrapper">
+                        <!-- Effet de fond décoratif bordeaux -->
+                        <div class="blob-glow"></div>
+                        <div class="blob-border-accent"></div>
+
+                        <!-- Le cadre organic blob shape -->
+                        <div class="organic-blob-frame">
+                            <img src="images/AIDA2.jpeg"
+                                alt="Aïda Dieng — Développeuse Web"
+                                class="hero-portrait-img">
+                        </div>
+
+                        <!-- Badges flottants professionnels -->
+                        <div class="floating-badge badge-top-left">
+                            <div class="badge-icon-box">
+                                <i class="bi bi-code-slash"></i>
+                            </div>
+                            <div class="badge-info">
+                                <strong>Front-End</strong>
+                                <small>HTML • CSS • JS</small>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-bottom-right">
+                            <div class="badge-icon-box">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </div>
+                            <div class="badge-info">
+                                <strong>Licence 3 IDA</strong>
+                                <small>UNCHK Saint-Louis</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#apropos" class="scroll-down-hint" aria-label="Défiler vers la section À propos">
+                <span data-i18n="hero.scrollHint">Découvrir</span>
+                <i class="bi bi-chevron-down"></i>
+            </a>
+        </section>
+
+
+        <!-- =========================
+             SECTION À PROPOS DE MOI
+        ========================== -->
+        <section id="apropos" class="section about-section">
+            <div class="section-container">
+                <div class="section-heading center">
+                    <span class="section-label" data-i18n="about.label">À PROPOS DE MOI</span>
+                    <h2 class="section-title" data-i18n="about.title">Mon parcours & Ma vision</h2>
+                    <p class="section-subtitle" data-i18n="about.subtitle">
+                        Découvrez qui je suis, ma passion pour le développement web et mes atouts pour vos projets.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Photo professionnelle élégamment cadrée avec cadre bordeaux -->
+                    <div class="about-visual">
+                        <div class="about-photo-frame">
+                            <div class="about-photo-backdrop"></div>
+                            <div class="about-photo-wrapper">
+                                <img src="images/AIDA3.jpeg"
+                                    alt="Aïda Dieng portrait"
+                                    class="about-img">
+                                <div class="about-photo-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contenu détaillé & structuré sur Aïda -->
+                    <div class="about-info-column">
+                        <div class="about-lead" data-i18n="about.lead">
+                            Étudiante en <strong>Licence 3</strong> en Informatique de Développement et d’Applications à l’<strong>Université Cheikh Hamidou Kane (UNCHK)</strong>.
+                        </div>
+
+                        <p class="about-text" data-i18n="about.p1">
+                            Passionnée par le monde du numérique et les nouvelles technologies, j'ai développé au cours de mon parcours une solide expertise dans la conception et le déploiement de sites et d'interfaces web.
+                        </p>
+
+                        <p class="about-text" data-i18n="about.p2">
+                            Mon approche allie <strong>rigueur technique</strong> et <strong>sensibilité esthétique</strong>. Je m'attache à produire un code structuré, accessible et conforme aux standards modernes, tout en accordant une attention méticuleuse à l'expérience utilisateur (UI/UX).
+                        </p>
+
+                        <div class="about-cta-group">
+                            <a href="#contact" class="btn btn-primary">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span data-i18n="about.ctaContact">Me contacter</span>
+                            </a>
+                            <a href="#projets" class="btn btn-outline">
+                                <span data-i18n="about.ctaProjects">Découvrir mes réalisations</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 CARTES MODERNES & PROFESSIONNELLES -->
+                <div class="about-cards-grid">
+                    <!-- Carte 1 : Front-End -->
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3 class="about-card-title" data-i18n="about.card1Title">Développement Front-End</h3>
+                        <p class="about-card-text" data-i18n="about.card1Desc">
+                            Création d'interfaces web réactives, intuitives et fidèles aux maquettes, optimisées pour tous les écrans.
+                        </p>
+                    </div>
+
+                    <!-- Carte 2 : Rigueur & Organisation -->
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h3 class="about-card-title" data-i18n="about.card2Title">Rigueur & Organisation</h3>
+                        <p class="about-card-text" data-i18n="about.card2Desc">
+                            Code propre, structuré et maintenable, respect des délais et maîtrise du versioning avec Git & GitHub.
+                        </p>
+                    </div>
+
+                    <!-- Carte 3 : Veille & Innovation -->
+                    <div class="about-card">
+                        <div class="about-card-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <h3 class="about-card-title" data-i18n="about.card3Title">Veille & Innovation</h3>
+                        <p class="about-card-text" data-i18n="about.card3Desc">
+                            Veille technologique continue et apprentissage constant pour maîtriser les outils et frameworks modernes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SECTION COMPÉTENCES
+        ========================== -->
+        <section id="competences" class="section skills-section">
+            <div class="section-container">
+                <div class="section-heading center">
+                    <span class="section-label">MES COMPÉTENCES</span>
+                    <h2 class="section-title">Technologies & Outils Maîtrisés</h2>
+                    <p class="section-subtitle">
+                        Un ensemble de compétences techniques et méthodologiques acquises à travers ma formation et mes projets concrets.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- HTML5 -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-filetype-html"></i>
+                            </div>
+                            <span class="skill-level-tag">Avancé</span>
+                        </div>
+                        <h3 class="skill-title">HTML5</h3>
+                        <p class="skill-desc">
+                            Structuration sémantique, accessibilité web (a11y), respect des normes W3C et optimisation SEO.
+                        </p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-filetype-css"></i>
+                            </div>
+                            <span class="skill-level-tag">Avancé</span>
+                        </div>
+                        <h3 class="skill-title">CSS3</h3>
+                        <p class="skill-desc">
+                            Flexbox, CSS Grid, Responsive Design, animations fluides et intégration soignée de designs sur-mesure.
+                        </p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-progress" style="width: 88%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-filetype-js"></i>
+                            </div>
+                            <span class="skill-level-tag">Intermédiaire</span>
+                        </div>
+                        <h3 class="skill-title">JavaScript</h3>
+                        <p class="skill-desc">
+                            Manipulation du DOM, événements interactifs, logique applicative et dynamisation d'interfaces utilisateur.
+                        </p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Bootstrap -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-bootstrap"></i>
+                            </div>
+                            <span class="skill-level-tag">Avancé</span>
+                        </div>
+                        <h3 class="skill-title">Bootstrap 5</h3>
+                        <p class="skill-desc">
+                            Développement rapide d'interfaces adaptatives, composants modernes et système de grilles flexibles.
+                        </p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- WordPress -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-wordpress"></i>
+                            </div>
+                            <span class="skill-level-tag">Intermédiaire</span>
+                        </div>
+                        <h3 class="skill-title">WordPress</h3>
+                        <p class="skill-desc">
+                            Création, personnalisation de thèmes, gestion de contenus et configuration de plateformes web complètes.
+                        </p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Git & GitHub -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrap">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <span class="skill-level-tag">Intermédiaire</span>
+                        </div>
+                        <h3 class="skill-title">Git & GitHub</h3>
+                        <p class="skill-desc">
+                            Gestion des versions de code, travail collaboratif, branches, commits structurés et hébergement de projets.
+                        </p>
+                        <div class="skill-bar-container">
+                            <div class="skill-bar-progress" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SECTION PROJETS
+        ========================== -->
+        <section id="projets" class="section projects-section">
+            <div class="section-container">
+                <div class="section-heading">
+                    <span class="section-label">MES RÉALISATIONS</span>
+                    <h2 class="section-title">Projets Sélectionnés</h2>
+                    <p class="section-subtitle">
+                        Une vitrine de mes travaux pratiques, alliant créativité, technique et souci du détail.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- PROJET 1 : AIDA'S SHOES -->
+                    <article class="project-card">
+                        <div class="project-image-wrap">
+                            <img src="images/AIDA'S (2).png"
+                                alt="Projet AIDA'S SHOES - E-commerce de chaussures"
+                                class="project-thumb">
+                            <div class="project-badge">Site Vitrine E-commerce</div>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category-tag">HTML5 · CSS3 · Responsive</div>
+                            <h3 class="project-title">AIDA'S SHOES</h3>
+                            <p class="project-description">
+                                Plateforme web de présentation élégante pour une boutique de chaussures de luxe, avec galerie de produits, mise en valeur des collections et ergonomie mobile soignée.
+                            </p>
+
+                            <div class="project-tech-pills">
+                                <span><i class="bi bi-tag"></i> HTML5</span>
+                                <span><i class="bi bi-tag"></i> CSS3</span>
+                                <span><i class="bi bi-tag"></i> UI Design</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-primary-sm">
+                                    <span>Voir le projet</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-outline-sm" aria-label="Code source GitHub pour Aida's Shoes">
+                                    <i class="bi bi-github"></i>
+                                    <span>Code GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJET 2 : TERANGA VOYAGE -->
+                    <article class="project-card">
+                        <div class="project-image-wrap">
+                            <img src="images/agence-de-voyage.png"
+                                alt="Projet Teranga Voyage - Agence touristique Sénégal"
+                                class="project-thumb">
+                            <div class="project-badge">Projet Collaboratif</div>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category-tag">HTML · CSS · Bootstrap</div>
+                            <h3 class="project-title">Teranga Voyage</h3>
+                            <p class="project-description">
+                                Site web immersif pour une agence de tourisme mettant en avant les plus belles destinations du Sénégal (Gorée, Saint-Louis, Casamance) avec formulaire de réservation et cartes interactives.
+                            </p>
+
+                            <div class="project-tech-pills">
+                                <span><i class="bi bi-tag"></i> HTML5</span>
+                                <span><i class="bi bi-tag"></i> CSS3</span>
+                                <span><i class="bi bi-tag"></i> Bootstrap 5</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-primary-sm">
+                                    <span>Voir le projet</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-outline-sm" aria-label="Code source GitHub pour Teranga Voyage">
+                                    <i class="bi bi-github"></i>
+                                    <span>Code GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJET 3 : SAMA LOGEMENT -->
+                    <article class="project-card">
+                        <div class="project-image-wrap">
+                            <img src="images/sama-logement.jpg"
+                                alt="Projet Sama Logement - Plateforme immobilière Dakar"
+                                class="project-thumb">
+                            <div class="project-badge">CMS & Immobilier</div>
+                        </div>
+
+                        <div class="project-body">
+                            <div class="project-category-tag">WordPress · Web Design</div>
+                            <h3 class="project-title">Sama Logement</h3>
+                            <p class="project-description">
+                                Conception d'un portail immobilier moderne pour faciliter la recherche, la location et l'achat de biens à Dakar avec filtres par quartier, galeries photos et contact direct des annonceurs.
+                            </p>
+
+                            <div class="project-tech-pills">
+                                <span><i class="bi bi-tag"></i> WordPress</span>
+                                <span><i class="bi bi-tag"></i> Custom UI</span>
+                                <span><i class="bi bi-tag"></i> SEO</span>
+                            </div>
+
+                            <div class="project-actions">
+                                <a href="https://aidaah.free.je/" target="_blank" rel="noopener noreferrer" class="project-btn btn-primary-sm">
+                                    <span>Voir le projet</span>
+                                    <i class="bi bi-arrow-up-right"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn btn-outline-sm" aria-label="Code source GitHub pour Sama Logement">
+                                    <i class="bi bi-github"></i>
+                                    <span>Code GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========================
+             SECTION CONTACT
+        ========================== -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <div class="contact-card-box">
+                    <div class="contact-info-panel">
+                        <span class="section-label">CONTACTEZ-MOI</span>
+                        <h2 class="contact-title">Travaillons Ensemble</h2>
+                        <p class="contact-intro">
+                            Vous avez un projet web à concrétiser, une opportunité de stage ou vous souhaitez simplement échanger ? Je suis à votre écoute !
+                        </p>
+
+                        <div class="contact-items-list">
+                            <!-- Email -->
+                            <a href="mailto:aidadg78@gmail.com" class="contact-item-card">
+                                <div class="contact-item-icon">
+                                    <i class="bi bi-envelope-at-fill"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-item-label">Adresse Email</span>
+                                    <strong class="contact-item-val">aidadg78@gmail.com</strong>
+                                </div>
+                                <div class="contact-item-action">
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </a>
+
+                            <!-- Téléphone / WhatsApp -->
+                            <a href="https://wa.me/221783729251" target="_blank" rel="noopener noreferrer" class="contact-item-card">
+                                <div class="contact-item-icon whatsapp-icon">
+                                    <i class="bi bi-whatsapp"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-item-label">Téléphone & WhatsApp</span>
+                                    <strong class="contact-item-val">+221 78 372 92 51</strong>
+                                </div>
+                                <div class="contact-item-action">
+                                    <i class="bi bi-arrow-right"></i>
+                                </div>
+                            </a>
+
+                            <!-- Localisation -->
+                            <div class="contact-item-card">
+                                <div class="contact-item-icon">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-item-label" data-i18n="contact.locLabel">Localisation</span>
+                                    <strong class="contact-item-val" data-i18n="contact.locVal">Saint-Louis, Sénégal</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-row">
+                            <span class="social-intro">Retrouvez-moi sur :</span>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub Profile">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn Profile">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="mailto:aidadg78@gmail.com" class="social-circle" aria-label="Envoyer un email">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de contact moderne et professionnel -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="contact-form" onsubmit="event.preventDefault(); window.handleContactSubmit();">
+                            <h3 class="form-title">Envoyez-moi un message</h3>
+
+                            <div class="form-group">
+                                <label for="form-name">Votre Nom complet <span class="req">*</span></label>
+                                <input type="text" id="form-name" name="name" class="form-control" placeholder="Ex: Fatou Ndiaye" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-email">Votre Adresse Email <span class="req">*</span></label>
+                                <input type="email" id="form-email" name="email" class="form-control" placeholder="Ex: fatou@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-subject">Sujet du message</label>
+                                <input type="text" id="form-subject" name="subject" class="form-control" placeholder="Ex: Proposition de projet web">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Votre Message <span class="req">*</span></label>
+                                <textarea id="form-message" name="message" rows="4" class="form-control" placeholder="Bonjour Aïda, je vous contacte à propos de..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                <i class="bi bi-send-fill"></i>
+                                <span>Envoyer le message</span>
+                            </button>
+
+                            <div id="form-status" class="form-status" style="display: none;"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#accueil" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span><span class="logo-name">AIDA'S</span> <span class="logo-slash">/&gt;</span>
+                </a>
+                <p class="footer-tagline">
+                    Développeuse Web • Conception d'interfaces élégantes et performantes.
+                </p>
+            </div>
+
+            <div class="footer-nav">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#competences">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 <strong>Aïda Dieng</strong> — Tous droits réservés.</p>
+                <a href="#accueil" class="back-to-top" id="back-to-top" aria-label="Remonter en haut de la page">
+                    <i class="bi bi-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
